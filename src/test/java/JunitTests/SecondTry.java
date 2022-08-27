@@ -1,8 +1,12 @@
+package JunitTests;
 import java.util.List;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import Core.ReadCsvFile;
+import Core.TestGet;
 
 public class SecondTry {
 	static List<String[]> lines;

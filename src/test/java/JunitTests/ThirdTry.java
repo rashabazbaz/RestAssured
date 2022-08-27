@@ -1,3 +1,4 @@
+package JunitTests;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,6 +6,10 @@ import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import Core.ReadCsvFile;
+import Core.TestGet;
+import Core.WriteCsvFile;
 
 public class ThirdTry {
 	static List<String[]> lines;

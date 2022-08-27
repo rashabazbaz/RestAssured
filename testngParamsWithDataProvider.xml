@@ -1,0 +1,8 @@
+<suite name="DP Suite" >
+<parameter name="filePath"  value="parameterData.csv"/>
+  <test name="Test Data provider with params" >
+    <classes>
+       <class name="TestNG.DataProviderTest" />
+    </classes>
+  </test>
+</suite>

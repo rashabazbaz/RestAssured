@@ -1,7 +1,10 @@
+package JunitTests;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import Core.Shelf;
 
 public class TestShelf {
 	static Shelf shelf;

@@ -1,0 +1,40 @@
+<suite name="First Suite" parallel="classes" thread-count="10" >
+<parameter name="filePath"  value="parameterData.csv"/>
+  <test name="Test Data provider with params" >
+    <classes>
+       <class name="TestNG.DataProviderTest" />
+    </classes>
+  </test>
+  <test name="First TestNG Test" >
+    <classes>
+       <class name="TestNG.TestNgBasics" />
+    </classes>
+  </test>
+  
+    <test name="Test with params" >
+  	<parameter name="first"  value="Test"/>
+	<parameter name="second"  value="Test"/>
+
+    <classes>
+       <class name="TestNG.TestWithParameters" />
+    </classes>
+  </test>
+  
+  <test name="Test with params 2" >
+  	<parameter name="first"  value="Test"/>
+	<parameter name="second"  value="Test1"/>
+
+    <classes>
+       <class name="TestNG.TestWithParameters" />
+    </classes>
+  </test>
+  
+  <test name="Test with params 3" >
+  	<parameter name="first"  value="Test"/>
+	<parameter name="second"  value="test"/>
+
+    <classes>
+       <class name="TestNG.TestWithParameters" />
+    </classes>
+  </test>
+</suite>

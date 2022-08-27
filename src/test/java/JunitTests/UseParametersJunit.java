@@ -1,3 +1,4 @@
+package JunitTests;
 import java.util.Collection;
 import java.util.List;
 
@@ -7,6 +8,9 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.BeforeParam;
 import org.junit.runners.Parameterized.Parameters;
+
+import Core.ReadCsvFile;
+import Core.TestGet;
 
 @RunWith(Parameterized.class)
 public class UseParametersJunit {

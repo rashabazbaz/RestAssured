@@ -1,0 +1,9 @@
+<suite name="First Suite" >
+  <test name="First TestNG Test" >
+    <classes>
+       <class name="TestNG.TestNgBasics" />
+    </classes>
+  </test>
+  
+  
+</suite>

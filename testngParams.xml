@@ -1,0 +1,33 @@
+<suite name="First Suite" >
+	
+  <test name="Test with params" >
+    <parameter name="first"  value="Test"/>
+
+	<parameter name="second"  value="Test"/>
+
+    <classes>
+       <class name="TestNG.TestWithParameters" />
+    </classes>
+  </test>
+  
+  <test name="Test with params 2" >
+  
+
+    <classes>
+      	<parameter name="first"  value="Test"/>
+
+		<parameter name="second"  value="Test1"/>
+       <class name="TestNG.TestWithParameters" />
+    </classes>
+  </test>
+  
+  <test name="Test with params 3" >
+   	<parameter name="first"  value="Test"/>
+
+	<parameter name="second"  value="test"/>
+
+    <classes>
+       <class name="TestNG.TestWithParameters" />
+    </classes>
+  </test>
+</suite>

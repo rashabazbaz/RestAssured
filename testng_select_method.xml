@@ -1,0 +1,18 @@
+<suite name="First Suite" >
+  <test name="First TestNG Test" >
+    <classes>
+       <class name="TestNG.TestNgBasics" />
+    </classes>
+  </test>
+  
+  <test name="Select Methods">
+    <classes>
+      <class name="TestNG.TestNgBasics" >
+      <methods>
+              <include name="testMethod_1" />
+              <include name="testMethod_2" />
+      </methods>
+      </class>
+   </classes>
+  </test>
+</suite>
