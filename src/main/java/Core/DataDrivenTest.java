@@ -1,6 +1,8 @@
 package Core;
 import java.util.List;
 
+import Rest.GetRequestUsage;
+
 public class DataDrivenTest {
 	public static void main(String[] args) throws Exception {
 		String path = "./testData.csv";
@@ -10,7 +12,7 @@ public class DataDrivenTest {
 			if(line[0].contains("route")) {
 				continue;
 			}
-			TestGet testGet = new TestGet();
+			GetRequestUsage testGet = new GetRequestUsage();
 			System.out.println(url + line[0]);
 			testGet.runGet(url + line[0]);
 			if(testGet.status_code == Integer.parseInt(line[1])) {

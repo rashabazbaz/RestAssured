@@ -10,7 +10,7 @@ import org.junit.runners.Parameterized.BeforeParam;
 import org.junit.runners.Parameterized.Parameters;
 
 import Core.ReadCsvFile;
-import Core.TestGet;
+import Rest.GetRequestUsage;
 
 @RunWith(Parameterized.class)
 public class UseParametersJunit {
@@ -32,7 +32,7 @@ public class UseParametersJunit {
 	@Parameters
 	public void testGet() {
 		String url = "https://jsonplaceholder.typicode.com" + url_prefex;
-		TestGet testGet = new TestGet();
+		GetRequestUsage testGet = new GetRequestUsage();
 
 		testGet.runGet(url);
 		Assert.assertEquals(Integer.parseInt(statusCode), testGet.status_code);

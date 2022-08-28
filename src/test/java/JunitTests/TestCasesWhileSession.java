@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import Core.TestGet;
+import Rest.GetRequestUsage;
 
 public class TestCasesWhileSession {
 	@Test
@@ -18,7 +18,7 @@ public class TestCasesWhileSession {
 	@Test
 	public void testValue() {
 		System.out.println("Test Value");
-		TestGet testGet = new TestGet();
+		GetRequestUsage testGet = new GetRequestUsage();
 		testGet.runGet("https://jsonplaceholder.typicode.com/posts/101");
 		Assert.assertEquals("expected status code not as actual",404, testGet.status_code);
 	}

@@ -6,7 +6,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import Core.ReadCsvFile;
-import Core.TestGet;
+import Rest.GetRequestUsage;
 
 public class SecondTry {
 	static List<String[]> lines;
@@ -25,7 +25,7 @@ public class SecondTry {
 			if(line[0].contains("route")) {
 				continue;
 			}
-			TestGet testGet = new TestGet();
+			GetRequestUsage testGet = new GetRequestUsage();
 			System.out.println(url + line[0]);
 			testGet.runGet(url + line[0]);
 			String statusCode =  line[1];
