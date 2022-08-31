@@ -17,6 +17,6 @@ public class TestClassForFactory {
 	
 	@Test
 	public void testData() {
-		assertEquals(Math.max(firstInt, secondInt) , maxInt);
+		assertEquals(maxInt, Math.max(firstInt, secondInt));
 	}
 }

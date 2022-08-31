@@ -1,0 +1,60 @@
+<suite name="Get with Params" >
+	
+  <test name="Test Get all posts" >
+    <parameter name="url_prefex"  value="/posts"/>
+
+	<parameter name="statusCode"  value="200"/>
+
+    <classes>
+       <class name="TestNG.GetTestsWithParams" />
+    </classes>
+  </test>
+    <test name="Test Get non-exist post" >
+    <parameter name="url_prefex"  value="/posts/111"/>
+
+	<parameter name="statusCode"  value="404"/>
+
+    <classes>
+       <class name="TestNG.GetTestsWithParams" />
+    </classes>
+  </test>
+  <test name="Test Get one post" >
+    <parameter name="url_prefex"  value="/posts/1"/>
+
+	<parameter name="statusCode"  value="200"/>
+
+    <classes>
+       <class name="TestNG.GetTestsWithParams" />
+    </classes>
+  </test>
+  <test name="Test Get invalid post" >
+    <parameter name="url_prefex"  value="/posts/test"/>
+
+	<parameter name="statusCode"  value="404"/>
+
+    <classes>
+       <class name="TestNG.GetTestsWithParams" />
+    </classes>
+  </test>
+  <test name="Test Get comments" >
+    <parameter name="url_prefex"  value="/comments?postId=1"/>
+
+	<parameter name="statusCode"  value="200"/>
+
+    <classes>
+       <class name="TestNG.GetTestsWithParams" />
+    </classes>
+  </test>
+  <test name="Test Get comments for invalid post" >
+    <parameter name="url_prefex"  value="/comments?postId=test"/>
+
+	<parameter name="statusCode"  value="404"/>
+
+    <classes>
+       <class name="TestNG.GetTestsWithParams" />
+    </classes>
+  </test>
+  
+  
+  
+</suite>

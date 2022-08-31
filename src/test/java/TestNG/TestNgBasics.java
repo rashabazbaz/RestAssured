@@ -27,6 +27,7 @@ public class TestNgBasics {
 		System.out.println("beforeTest");
 	}
 	
+	
 	@Test
 	public void testMethod_1() {
 		System.out.println("testMethod_1");

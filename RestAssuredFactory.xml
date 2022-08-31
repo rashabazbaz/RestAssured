@@ -1,0 +1,15 @@
+<suite name="Rest Assured with Factory" >
+<parameter name="csv_path"  value="testData.csv"/>
+<parameter name="jsonPath"  value="TestCases.json"/>
+
+  <test name="Test Get Requests with Factory" >
+    <classes>
+       <class name="TestNG.FactoryClassForGet" />
+    </classes>
+  </test>
+  <test name="Test Post, PUT and Delete Requests with Factory" >
+    <classes>
+       <class name="TestNG.FactoryClassForRest" />
+    </classes>
+  </test>
+</suite>

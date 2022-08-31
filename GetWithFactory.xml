@@ -1,0 +1,8 @@
+<suite name="DP Suite" >
+<parameter name="path"  value="testData.csv"/>
+  <test name="Test Factory with params" >
+    <classes>
+       <class name="TestNG.FactoryClassForGet" />
+    </classes>
+  </test>
+</suite>

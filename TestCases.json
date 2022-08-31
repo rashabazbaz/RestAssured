@@ -1,0 +1,86 @@
+[
+	{
+		"method": "POST",
+		"req_body":{
+	    	"userId": 10,
+	    	"title": "Test Title",
+	    	"body": "Test Body"
+			},
+		"url_prefex":"/posts",
+		"statusCode" : 201,
+		"body" : {
+	    	"userId": 10,
+	    	"id": 101,
+	    	"title": "Test Title",
+	    	"body": "Test Body 2"
+			}
+	},
+	{
+		"method": "POST",
+		"req_body":{
+	    	"userId": 10,
+	    	"title": "Test Title",
+	    	"body": "Test Body"
+			},
+		"url_prefex":"/post",
+		"statusCode" : 404,
+		"body" : {
+			}
+	},
+	{
+		"method": "PUT",
+		"req_body":{
+	    	"userId": 10,
+	    	"title": "Test Title 4",
+	    	"body": "Test Body 4"
+			},
+		"url_prefex":"/posts/1",
+		"statusCode" : 200,
+		"body" : {
+	    	"userId": 10,
+	    	"id": 1,
+	    	"title": "Test Title 4",
+	    	"body": "Test Body 4"
+			}
+	},
+	{
+		"method": "PUT",
+		"req_body":{
+	    	"userId": 10,
+	    	"title": "Test Title 4",
+	    	"body": "Test Body 4"
+			},
+		"url_prefex":"/posts/1000",
+		"statusCode" : 404,
+		"body" : {
+			}
+	},
+	{
+		"method": "PUT",
+		"req_body":{
+	    	"userId": 10000,
+	    	"title": "Test Title 4",
+	    	"body": "Test Body 4"
+			},
+		"url_prefex":"/posts/10",
+		"statusCode" : 404,
+		"body" : {
+			}
+	},
+	{
+		"method": "DELETE",
+		"req_body":{},
+		"url_prefex":"/posts/1",
+		"statusCode" : 200,
+		"body" : {
+			}
+	},
+	{
+		"method": "DELETE",
+		"req_body":{},
+		"url_prefex":"/posts/1000",
+		"statusCode" : 404,
+		"body" : {
+			}
+	}
+]
